@@ -43,48 +43,102 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+
+/* ==========================================
+   TOGETHERLY – LIGHT THEME
+   ========================================== */
+
 :root {
-  --vp-c-default-1: var(--vp-c-gray-1);
-  --vp-c-default-2: var(--vp-c-gray-2);
-  --vp-c-default-3: var(--vp-c-gray-3);
-  --vp-c-default-soft: var(--vp-c-gray-soft);
+  /* Default */
+  --vp-c-default-1: #6f5963;
+  --vp-c-default-2: #a18a94;
+  --vp-c-default-3: #d9c5ce;
+  --vp-c-default-soft: #f8eaf0;
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  /* Brand */
+  --vp-c-brand-1: #c43f75;
+  --vp-c-brand-2: #d85e8e;
+  --vp-c-brand-3: #e8749e;
+  --vp-c-brand-soft: #fce8f0;
 
+  /* Tip */
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
   --vp-c-tip-3: var(--vp-c-brand-3);
   --vp-c-tip-soft: var(--vp-c-brand-soft);
 
-  --vp-c-warning-1: var(--vp-c-yellow-1);
-  --vp-c-warning-2: var(--vp-c-yellow-2);
-  --vp-c-warning-3: var(--vp-c-yellow-3);
-  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+  /* Warning */
+  --vp-c-warning-1: #ad7625;
+  --vp-c-warning-2: #c99545;
+  --vp-c-warning-3: #e4bc78;
+  --vp-c-warning-soft: #fff8e9;
 
-  --vp-c-danger-1: var(--vp-c-red-1);
-  --vp-c-danger-2: var(--vp-c-red-2);
-  --vp-c-danger-3: var(--vp-c-red-3);
-  --vp-c-danger-soft: var(--vp-c-red-soft);
-}
+  /* Danger */
+  --vp-c-danger-1: #c73550;
+  --vp-c-danger-2: #df526b;
+  --vp-c-danger-3: #ed8495;
+  --vp-c-danger-soft: #fff0f2;
 
-/**
- * Component: Button
- * -------------------------------------------------------------------------- */
-
-:root {
+  /* Brand buttons */
   --vp-button-brand-border: transparent;
-  --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #c43f75;
   --vp-button-brand-hover-border: transparent;
-  --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #a93265;
   --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #912653;
 }
+
+
+/* ==========================================
+   TOGETHERLY – DARK THEME
+   ========================================== */
+
+.dark {
+  /* Default */
+  --vp-c-default-1: #c4aab6;
+  --vp-c-default-2: #947b87;
+  --vp-c-default-3: #59444f;
+  --vp-c-default-soft: #30232b;
+
+  /* Brand */
+  --vp-c-brand-1: #f08caf;
+  --vp-c-brand-2: #e8749e;
+  --vp-c-brand-3: #d85e8e;
+  --vp-c-brand-soft: #422535;
+
+  /* Tip */
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  /* Warning */
+  --vp-c-warning-1: #f0c477;
+  --vp-c-warning-2: #d9a64f;
+  --vp-c-warning-3: #a97c35;
+  --vp-c-warning-soft: #382d1c;
+
+  /* Danger */
+  --vp-c-danger-1: #ff899b;
+  --vp-c-danger-2: #ed687e;
+  --vp-c-danger-3: #c74760;
+  --vp-c-danger-soft: #3c222a;
+
+  /* Brand buttons */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #25131c;
+  --vp-button-brand-bg: #f08caf;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #25131c;
+  --vp-button-brand-hover-bg: #f5a4bf;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #25131c;
+  --vp-button-brand-active-bg: #e8749e;
+}
+
 
 /**
  * Component: Home
@@ -140,4 +194,32 @@
   100% {
     transform: translateY(-18px);
   }
+}
+
+/**
+ * Component: Features cards
+ * -------------------------------------------------------------------------- */
+
+
+/* Feature cards */
+.VPFeatures .VPFeature .box {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Hover effect */
+.VPFeatures .VPFeature:hover .box {
+  border-color: #e8749e;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(209, 72, 124, 0.12);
+}
+
+/* Dark mode */
+.dark .VPFeatures .VPFeature:hover .box {
+  border-color: #f08caf;
+  box-shadow: 0 6px 24px rgba(240, 140, 175, 0.12);
 }

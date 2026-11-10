@@ -1,30 +1,202 @@
+
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
+// ==========================================
+// TOGETHERLY DOCUMENTATION
+// togetherly.hu
+// ==========================================
+
 export default defineConfig({
-  srcDir: "docs",
-  
-  title: "Togetherly Docs",
-  description: "togetherly.hu",
+  srcDir: 'docs',
+
+  // Site identity
+  lang: 'hu-HU',
+  title: 'Togetherly Docs',
+  description:
+    'A Togetherly dokumentációja - minden, amit a közös pillanatok megtervezéséről, megőrzéséről és megéléséről tudni érdemes.',
+  cleanUrls: true,
+  // Metadata and branding
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
+    ['meta', { name: 'theme-color', content: '#e8749e' }],
+    ['meta', { name: 'author', content: 'Togetherly' }],
+    ['meta', { name: 'application-name', content: 'Togetherly' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'Togetherly' }],
+
+    // Open Graph
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Togetherly' }],
+    ['meta', { property: 'og:title', content: 'Togetherly Docs' }],
+    [
+      'meta',
+      {
+        property: 'og:description',
+        content:
+          'Minden információ a Togetherly használatáról és funkcióiról.',
+      },
+    ],
+    ['meta', { property: 'og:image', content: '/logo.png' }],
+
+    // Twitter
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:title', content: 'Togetherly Docs' }],
+    [
+      'meta',
+      {
+        name: 'twitter:description',
+        content: 'A Togetherly hivatalos dokumentációja.',
+      },
+    ],
+  ],
+
+  // ==========================================
+  // THEME CONFIGURATION
+  // ==========================================
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    // Logo
+    logo: '/logo.png',
+    siteTitle: 'Togetherly Docs',
+
+    // Navigation
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      {
+        text: 'Kezdőlap',
+        link: '/',
+      },
+      {
+        text: 'Felhasználóknak',
+        link: '/elso-lepesek',
+      },
+      {
+        text: 'Fejlesztőknek',
+        link: '/fejlesztok/attekintes',
+      },
+      {
+        text: 'Togetherly.hu',
+        link: 'https://togetherly.hu',
+      },
     ],
 
+    // Sidebar
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Felhasználói útmutató',
+        collapsed: false,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          {
+            text: 'Első lépések',
+            link: '/elso-lepesek',
+          },
+          {
+            text: 'Bejelentkezés és közös tér',
+            link: '/fiok-es-kozos-ter',
+          },
+          {
+            text: 'Randi tervezése',
+            link: '/randi-tervezese',
+          },
+          {
+            text: 'Naptár és randiállapotok',
+            link: '/naptar-es-randik',
+          },
+          {
+            text: 'Emlékek és galéria',
+            link: '/emlekek-es-galeria',
+          },
+          {
+            text: 'Profil és beállítások',
+            link: '/profil-es-beallitasok',
+          },
+          {
+            text: 'Gyakori kérdések',
+            link: '/gyik',
+          },
+        ],
+      },
+      {
+        text: 'Fejlesztői kézikönyv',
+        collapsed: false,
+        items: [
+          { text: 'Áttekintés', link: '/fejlesztok/attekintes' },
+          { text: 'Helyi fejlesztés és üzemeltetés', link: '/fejlesztok/telepites' },
+          { text: 'Architektúra és adatmodell', link: '/fejlesztok/architektura' },
+          { text: 'API, feltöltések és integrációk', link: '/fejlesztok/api-es-feltoltesek' },
+          { text: 'Adminisztráció és hibaelhárítás', link: '/fejlesztok/admin-es-uzemeltetes' },
+        ],
+      },
     ],
 
+    // Search
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: 'Keresés',
+                buttonAriaLabel: 'Keresés',
+              },
+              modal: {
+                noResultsText: 'Nincs találat erre:',
+                resetButtonTitle: 'Keresés törlése',
+                footer: {
+                  selectText: 'Kiválasztás',
+                  navigateText: 'Navigálás',
+                  closeText: 'Bezárás',
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+
+    // Table of contents
+    outline: {
+      label: 'Ezen az oldalon',
+      level: [2, 3],
+    },
+
+    // Last updated
+    lastUpdated: {
+      text: 'Utolsó frissítés',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+      },
+    },
+
+    // Edit links
+    editLink: {
+      pattern:
+        'https://github.com/togetherlyhu/togetherly-docs/edit/main/docs/:path',
+      text: 'Oldal szerkesztése GitHubon',
+    },
+
+    // Social links
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+      {
+        icon: 'github',
+        link: 'https://github.com/togetherlyhu',
+      },
+    ],
+
+
+    // Back to top
+    returnToTopLabel: 'Vissza az oldal tetejére',
+
+    // Sidebar labels
+    sidebarMenuLabel: 'Menü',
+
+    // Dark mode switch
+    darkModeSwitchLabel: 'Megjelenés',
+
+    // Mobile menu
+    docFooter: {
+      prev: 'Előző oldal',
+      next: 'Következő oldal',
+    },
+  },
 })

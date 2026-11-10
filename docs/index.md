@@ -2,28 +2,42 @@
 layout: home
 
 hero:
-  name: VitePress
-  text: Vite & Vue powered static site generator.
-  tagline: Lorem ipsum...
+  name: Togetherly
+  text: Közös pillanatok, egy helyen
+  tagline: Egyszerű útmutatók ahhoz, hogy több idő maradjon egymásra.
   image:
     src: /logo.png
-    alt: VitePress
+    alt: Togetherly logo
   actions:
     - theme: brand
-      text: Get Started
-      link: /api-examples.md
+      text: Induljunk el
+      link: /elso-lepesek
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      text: togetherly.hu
+      link: https://togetherly.hu
 
 features:
-  - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
-  - icon: 🛠️
-    title: Another cool feature
-    details: Lorem ipsum...
-  - icon: 🛠️
-    title: Another cool feature
-    details: Lorem ipsum...
+  - icon: 💗
+    title: Ketten, egy helyen
+    details: A Togetherly a közös terveiteknek és kedvenc pillanataitoknak ad egy otthont.
+
+  - icon: 📅
+    title: Programok, amik nem vesznek el
+    details: Ötletelj, egyeztess, és tartsátok szem előtt a következő közös alkalmatokat.
+
+  - icon: 💌
+    title: A saját közös teretek
+    details: Hívd meg a párodat, hogy ugyanazokat a terveket és emlékeket lássátok.
+
+  - icon: 📸
+    title: Emlékek, amelyek megmaradnak
+    details: Mentsétek el a fotókat, gondolatokat és apró részleteket, amelyek csak nektek fontosak.
+
+  - icon: 🗓️
+    title: Könnyebb egyeztetés
+    details: A közös programok egy helyen segítenek, hogy mindketten képben legyetek.
+
+  - icon: ✨
+    title: Segítség, ha elakadtál
+    details: A GYIK-ben rövid, érthető válaszokat találsz a leggyakoribb kérdésekre.
 ---
