@@ -12,9 +12,9 @@ hero:
     - theme: brand
       text: Induljunk el
       link: /elso-lepesek
-    - theme: alt
-      text: togetherly.hu
-      link: https://togetherly.hu
+    # - theme: alt
+    #   text: togetherly.hu
+    #   link: https://togetherly.hu
 
 features:
   - icon: 💗
