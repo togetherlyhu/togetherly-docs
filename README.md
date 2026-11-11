@@ -1,20 +1,20 @@
-# Togetherly dokumentáció
+# 📚 Togetherly dokumentáció
 
 A Togetherly dokumentációs webhelye magyar nyelvű útmutatókat tartalmaz az alkalmazás felhasználói és fejlesztői számára. Az oldal VitePress-alapú, tartalma a `docs/` könyvtárban található.
 
-## Tartalom
+## 🗂️ Tartalom
 
 - `docs/` — felhasználói útmutatók és changelog
 - `docs/fejlesztok/` — fejlesztői, telepítési, üzemeltetési és közreműködési útmutatók
 - `.vitepress/config.mts` — az oldal nyelve, navigációja, oldalsávja és megjelenése
 
-## Helyi fejlesztés
+## 🛠️ Helyi fejlesztés
 
-### Előfeltétel
+### 📋 Előfeltétel
 
 - [Bun](https://bun.sh/)
 
-### Telepítés és indítás
+### 🚀 Telepítés és indítás
 
 ```bash
 bun install
@@ -23,7 +23,7 @@ bun run docs:dev
 
 A VitePress kiírja a terminálba a helyi előnézet címét.
 
-## Ellenőrzés és előnézet
+## ✅ Ellenőrzés és előnézet
 
 ```bash
 # A dokumentáció buildelése
@@ -33,7 +33,7 @@ bun run docs:build
 bun run docs:preview
 ```
 
-## Dokumentáció szerkesztése
+## ✏️ Dokumentáció szerkesztése
 
 Részletes útmutatóért olvasd el a [közreműködési útmutatót](./docs/fejlesztok/kozremukodes.md).
 

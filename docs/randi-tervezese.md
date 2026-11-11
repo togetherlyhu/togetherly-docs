@@ -6,7 +6,7 @@ outline: deep
 
 A Togetherly randitervezője 12 rövid lépésben gyűjti össze, milyen programot szeretnétek. Az új tervet a kezelőpultról vagy a naptár egy jövőbeli napjáról indíthatod.
 
-## A 12 tervezési lépés
+## ✨ A 12 tervezési lépés
 
 1. **Randitípus** — romantikus vacsora, piknik, mozi, múzeum vagy kiállítás, bowling, wellness, kaland, meglepetés vagy saját ötlet.
 2. **Hangulat** — meghitt, elegáns, kalandos, vidám, nyugodt vagy luxus.
@@ -21,16 +21,16 @@ A Togetherly randitervezője 12 rövid lépésben gyűjti össze, milyen program
 11. **Meglepetés mértéke** — az előre ismert programtól a teljes meglepetésig.
 12. **Megjegyzés** — minden egyéb kívánság vagy részlet.
 
-## Ellenőrzés és mentés
+## ✅ Ellenőrzés és mentés
 
 A végén ellenőrző összefoglalót kapsz. Itt bármelyik korábbi lépéshez visszaléphetsz, majd elmentheted a tervet. A randi a saját adataival jelenik meg a kezelőpulton és a naptárban.
 
-## Randi szerkesztése és állapota
+## 🔄 Randi szerkesztése és állapota
 
 Nyisd meg a randit a kezelőpultról vagy a naptárból, majd válaszd a szerkesztést. A cím, típus, hangulat, időpont, költség, étkezési igények és minden egyéb tervezési adat módosítható.
 
 Az állapotok: **Ötlet**, **Tervezve**, **Megvalósítva** és **Lemondva**. A megvalósult randikhoz érdemes emléket rögzíteni. A már nem szükséges randit a részletező oldalról törölheted.
 
-## Naptárba mentés
+## 📅 Naptárba mentés
 
 Egy randi részleteinél elérhető naptár-export. Letölthetsz `.ics` fájlt, amelyet a naptáralkalmazásodba importálhatsz, vagy használhatod a Google Naptárhoz előkészített hivatkozást. Az export a randi címét, dátumát és — ha megadtátok — pontos idejét használja.

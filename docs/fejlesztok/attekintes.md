@@ -6,7 +6,7 @@ outline: deep
 
 Ez a dokumentáció a `togetherly` kódbázis 2026. novemberi állapotát írja le. A Togetherly egy SvelteKit-alapú, magyar nyelvű alkalmazás párok közös randitervezéséhez, emlékeihez és médiájához.
 
-## Technológiai alapok
+## ⚙️ Technológiai alapok
 
 | Terület | Megoldás |
 | --- | --- |
@@ -21,7 +21,7 @@ Ez a dokumentáció a `togetherly` kódbázis 2026. novemberi állapotát írja 
 | Ikonok és animáció | Lucide, Motion for Svelte |
 | Kódminőség | TypeScript, Svelte Check, ESLint, Prettier |
 
-## Fő alkalmazási területek
+## 🧭 Fő alkalmazási területek
 
 - **Belépés:** e-mailes, hatjegyű, időkorlátos ellenőrzőkód; nincsenek jelszavak.
 - **Közös tér:** `couples` és `participants` entitások határolják a párok adatait.
@@ -29,7 +29,7 @@ Ez a dokumentáció a `togetherly` kódbázis 2026. novemberi állapotát írja 
 - **Emlékek és média:** randihoz kötött emlékek, valamint közös galéria képeknek és videóknak.
 - **Üzemeltetés:** admin felület, jogosultságok, értesítések, naplózás, rendszerállapot és karbantartási mód.
 
-## Fontos belépési pontok
+## 🔑 Fontos belépési pontok
 
 | Hely | Szerepe |
 | --- | --- |
@@ -40,7 +40,7 @@ Ez a dokumentáció a `togetherly` kódbázis 2026. novemberi állapotát írja 
 | `src/lib/data/questions.ts` | randitervező magyar szövegei és opciói |
 | `drizzle/` | verziózott SQL migrációk |
 
-## Alapelvek
+## 🧩 Alapelvek
 
 Az alkalmazás pár-központú: a randik és fájlok `coupleId` alapján vannak elhatárolva. Az adatot érintő oldalak a szerveroldali `locals.participant` és `locals.couple` kontextusra támaszkodnak. Új funkciónál ezt a hozzáférés-ellenőrzést a szerveren is meg kell tartani; a kliensoldali elrejtés önmagában nem jogosultsági védelem.
 

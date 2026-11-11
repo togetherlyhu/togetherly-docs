@@ -4,7 +4,7 @@ outline: deep
 
 # ⚙️ Helyi fejlesztés és üzemeltetés
 
-## Előfeltételek
+## 📋 Előfeltételek
 
 - Bun 1.x;
 - PostgreSQL 16, vagy Docker Compose-os PostgreSQL;
@@ -12,7 +12,7 @@ outline: deep
 - Cloudflare R2-kompatibilis objektumtár a fájlfeltöltésekhez;
 - FFmpeg, ha nem Dockerben futtatod és videófeldolgozást használsz.
 
-## Helyi indítás
+## 🚀 Helyi indítás
 
 ```powershell
 cd C:\projektek\togetherly
@@ -25,7 +25,7 @@ bun dev
 
 A Vite fejlesztői szerver alapértelmezés szerint a terminálban jelzett helyi címen érhető el. A Docker Compose az adatbázist a `5432`, az alkalmazáskonténert a `3000` porton publikálja.
 
-## Környezeti változók
+## ⚙️ Környezeti változók
 
 | Csoport | Változók | Megjegyzés |
 | --- | --- | --- |
@@ -48,7 +48,7 @@ Dockerben a `BODY_SIZE_LIMIT` alapértéke `50M`. Ez az egy HTTP-kérés (péld�
 `.env` fájlt, SMTP-jelszót, R2-kulcsot vagy adatbázis-kapcsolati jelszót soha ne commitolj és ne írj bele felhasználói dokumentációba vagy kliensoldali kódba.
 :::
 
-## Gyakori parancsok
+## 💻 Gyakori parancsok
 
 | Parancs | Feladat |
 | --- | --- |
@@ -63,7 +63,7 @@ Dockerben a `BODY_SIZE_LIMIT` alapértéke `50M`. Ez az egy HTTP-kérés (péld�
 | `bun run db:push` | séma szinkronizálása fejlesztéshez |
 | `bun run db:studio` | Drizzle Studio |
 
-## Konténeres futtatás
+## 🐳 Konténeres futtatás
 
 A teljes alkalmazás és az adatbázis indítása:
 

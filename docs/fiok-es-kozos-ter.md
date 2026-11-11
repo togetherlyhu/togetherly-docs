@@ -4,20 +4,20 @@ outline: deep
 
 # 🏡 Bejelentkezés és közös tér
 
-## Belépés jelszó nélkül
+## 🔐 Belépés jelszó nélkül
 
 A Togetherly nem kér jelszót. A bejelentkezéshez add meg az e-mail-címedet, majd írd be az e-mailben kapott hatjegyű kódot. Egy kód 10 percig használható fel.
 
 Sikeres ellenőrzés után a rendszer egy 30 napig érvényes bejelentkezési munkamenetet hoz létre azon a böngészőn. Ha kijelentkezel, az adott munkamenet megszűnik.
 
-### Ha nem érkezik meg a kód
+### 🔧 Ha nem érkezik meg a kód
 
 1. Ellenőrizd, hogy helyes e-mail-címet írtál-e be.
 2. Nézd meg a Spam/Levélszemét mappát is.
 3. Kérj új kódot a belépőoldalon.
 4. Várj néhány percet, ha sokszor próbáltad: a rendszer korlátozza a kódkéréseket és a hibás próbálkozásokat.
 
-## Közös tér létrehozása
+## ❤️ Közös tér létrehozása
 
 Az első belépés után, ha még nem tartozol közös térhez, a **Közös tér létrehozása** folyamat indul.
 
@@ -29,7 +29,7 @@ Az első belépés után, ha még nem tartozol közös térhez, a **Közös tér
 
 Az ízlések között több kedvenc randi- és érdeklődési kör megjelölhető. Az „Ami nem tetszik” mezőbe vesszővel elválasztott dolgokat írhatsz, például `horrorfilmek, extrém sportok`.
 
-## Partner meghívása
+## 💌 Partner meghívása
 
 A meghívó egy e-mailes belépőkódot tartalmaz. A partnerednek az e-mail-címével kell belépnie, majd a kapott kódot kell megadnia. Ezzel ugyanahhoz a közös térhez kapcsolódik.
 
@@ -37,6 +37,6 @@ A meghívó egy e-mailes belépőkódot tartalmaz. A partnerednek az e-mail-cím
 Közös tér létrehozásakor ellenőrizd a partnered e-mail-címét. Ha elírás miatt nem ő kapja a meghívót, a problémát az üzemeltetői támogatáson keresztül kell jelezni.
 :::
 
-## Kijelentkezés
+## 🚪 Kijelentkezés
 
 A kijelentkezés a navigációs menüből érhető el. Közös vagy nyilvános készüléken mindig jelentkezz ki a használat végén.

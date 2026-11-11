@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Induljunk el
-      link: /elso-lepesek
+      link: /welcome
     # - theme: alt
     #   text: togetherly.hu
     #   link: https://togetherly.hu

@@ -1,6 +1,11 @@
 
 import { defineConfig } from 'vitepress'
 
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
+
 // ==========================================
 // TOGETHERLY DOCUMENTATION
 // togetherly.hu
@@ -49,6 +54,29 @@ export default defineConfig({
     ],
   ],
 
+  sitemap: {
+    hostname: 'https://docs.togetherly.hu'
+  },
+
+
+
+  vite: { 
+    plugins: [ 
+      GitChangelog({ 
+        repoURL: () => 'https://github.com/togetherlyhu/togetherly-docs', 
+        mapAuthors: [
+          {
+            name: 'matyii',
+            username: 'matyii',
+            mapByNameAliases: ['matyii']
+          },
+        ],
+      }), 
+      GitChangelogMarkdownSection(), 
+    ],
+  },
+
+
   // ==========================================
   // THEME CONFIGURATION
   // ==========================================
@@ -73,6 +101,10 @@ export default defineConfig({
         link: '/fejlesztok/attekintes',
       },
       {
+        text: 'Csapatunk',
+        link: '/csapatunk',
+      },
+      {
         text: 'Changelog',
         link: '/changelog/',
       },
@@ -85,7 +117,15 @@ export default defineConfig({
     // Sidebar
     sidebar: [
       {
-        text: 'Felhasználói útmutató',
+        text: '🚀 Kezdetek',
+        collapsed: false,
+        items: [
+          { text: 'Üdvözlünk', link: '/welcome' },
+          { text: 'Csapatunk', link: '/csapatunk' },
+        ],
+      },
+      {
+        text: '👥 Felhasználói útmutató',
         collapsed: false,
         items: [
           {
@@ -119,7 +159,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Fejlesztői kézikönyv',
+        text: '💻 Fejlesztői kézikönyv',
         collapsed: false,
         items: [
           { text: 'Áttekintés', link: '/fejlesztok/attekintes' },
@@ -131,10 +171,11 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Changelog',
+        text: '🎉 Changelog',
         collapsed: false,
         items: [
           { text: 'Áttekintés', link: '/changelog/' },
+          { text: 'v0.2.2', link: '/changelog/v0-2-2' },
           { text: 'v0.2.1', link: '/changelog/v0-2-1' },
           { text: 'v0.2.0', link: '/changelog/v0-2-0' },
           { text: 'v0.1.2', link: '/changelog/v0-1-2' },

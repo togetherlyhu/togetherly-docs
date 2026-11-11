@@ -6,7 +6,7 @@ outline: deep
 
 Szívesen fogadunk javításokat, pontosításokat és új útmutatókat. A dokumentáció forrása a repó `docs/` könyvtára; az oldal VitePress segítségével készül.
 
-## Milyen változtatások hasznosak?
+## 💡 Milyen változtatások hasznosak?
 
 - elavult vagy pontatlan leírás javítása;
 - hiányzó lépések, magyarázatok és gyakori kérdések hozzáadása;
@@ -15,7 +15,7 @@ Szívesen fogadunk javításokat, pontosításokat és új útmutatókat. A doku
 
 Ha egy alkalmazásfunkció működése nem egyértelmű, ellenőrizd a Togetherly alkalmazás aktuális viselkedését, vagy jelezd a bizonytalanságot a változtatás leírásában. Ne dokumentálj feltételezést tényként.
 
-## Munkafolyamat
+## 🔄 Munkafolyamat
 
 1. Nyiss egy hibajegyet, ha előbb egyeztetni szeretnél a változtatásról, vagy ha nagyobb útmutatót tervezel.
 2. Készíts egy külön ágat a módosításaidnak.
@@ -24,7 +24,7 @@ Ha egy alkalmazásfunkció működése nem egyértelmű, ellenőrizd a Togetherl
 5. Helyben ellenőrizd az oldalt, majd futtasd a buildet.
 6. Küldj pull requestet, amelyben röviden leírod a változtatást és az elvégzett ellenőrzéseket.
 
-## Helyi ellenőrzés
+## ✅ Helyi ellenőrzés
 
 ```bash
 bun install
@@ -37,7 +37,7 @@ Az előnézetben nézd meg a módosított oldalt és az érintett hivatkozásoka
 bun run docs:build
 ```
 
-## Írási és adatvédelmi irányelvek
+## 🛡️ Írási és adatvédelmi irányelvek
 
 - A dokumentáció nyelve magyar; fogalmazz közérthetően, következetesen és tömören.
 - A felhasználói útmutatók a Togetherly felületén látható elnevezéseket használják.

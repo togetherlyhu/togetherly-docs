@@ -223,3 +223,7 @@
   border-color: #f08caf;
   box-shadow: 0 6px 24px rgba(240, 140, 175, 0.12);
 }
+
+.VPLastUpdated bdi {
+  margin-right: 0.25em;
+}

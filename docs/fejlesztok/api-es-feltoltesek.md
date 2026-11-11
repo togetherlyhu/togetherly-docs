@@ -6,7 +6,7 @@ outline: deep
 
 Az API-k elsődlegesen a Togetherly saját klienséhez készültek; nincsenek stabil, külső fejlesztőknek verziózott publikus API-ként deklarálva. Külső kliens előtt vezess be külön API-szerződést, autentikációs modellt, verziózást és jogosultságkezelést.
 
-## Rendszer- és naptárvégpontok
+## 💻 Rendszer- és naptárvégpontok
 
 | Végpont | Módszer | Cél |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ A health válasz tartalmazza az állapotot, időbélyeget, verziót, valamint k�
 
 A verzióvégpont `current` mezője az aktuális verziót és – ha rendelkezésre áll – a commit azonosítóját adja vissza. A `latest` a legutóbbi publikált changelog-bejegyzést tartalmazza, a `latestStatus` pedig jelzi, hogy van-e elérhető kiadás. Adatbázishiba esetén a végpont `503` választ ad, és a legutóbbi kiadást nem tudja lekérni.
 
-## Feltöltési folyamat
+## 📤 Feltöltési folyamat
 
 A média multipart feltöltéssel kerül az R2-be. A folyamatot a kliensoldali `src/lib/client/upload.ts` használja.
 
@@ -30,13 +30,13 @@ A média multipart feltöltéssel kerül az R2-be. A folyamatot a kliensoldali `
 4. `POST /api/upload/complete` JSON törzzsel: `uploadSessionId` és a nem üres `parts` tömb, amely minden eleménél szerepel `partNumber` és `etag`.
 5. A szerver befejezi a multipart feltöltést, majd a háttérfeldolgozás létrehozza a szükséges változatokat és metaadatokat.
 
-### Feltöltési korlátok és érvényesség
+### 📏 Feltöltési korlátok és érvényesség
 
 A szerveroldali konfiguráció alapértékei szerint a maximális képméret 10 MB, videóméret 100 MB, a páronkénti tárhely 5 GB. Az `init` végpont a páronkénti feltöltési sebességet is korlátozza. Ezek telepítésenként módosíthatók, ezért a kliens ne feltételezzen rögzített értékeket.
 
 A validáció támogatott formátumai jelenleg JPEG, PNG, HEIC, MP4 és MOV. A szerver a fájl tényleges bájtsorát is ellenőrzi, nem csak a böngésző által küldött MIME-típust. A víruskeresés ClamAV-val próbál futni; ha a bináris nem érhető el, a jelenlegi megvalósítás figyelmeztetést naplóz és a szkennelést átugorja.
 
-## Fájlműveletek
+## 🗂️ Fájlműveletek
 
 | Végpont | Módszer | Művelet |
 | --- | --- | --- |
@@ -49,7 +49,7 @@ A validáció támogatott formátumai jelenleg JPEG, PNG, HEIC, MP4 és MOV. A s
 
 Minden fájlvégpont a `coupleId` alapján ellenőrzi, hogy a kért elem a belépett felhasználó közös teréhez tartozik-e. Ezt új végpontban is kötelező megtartani.
 
-## Háttérmunka és takarítás
+## ⏱️ Háttérmunka és takarítás
 
 Az indítás után fél perccel, majd óránként fut a takarító. Lezárja a lejárt feltöltési munkameneteket, eltávolítja a lejárt lomtárban lévő objektumokat, és hibásnak jelöli az egy óránál régebb óta függő feldolgozásokat.
 

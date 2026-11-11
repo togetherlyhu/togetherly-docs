@@ -6,7 +6,7 @@ outline: deep
 
 A **Beállítások** oldalon módosíthatod a saját és a közös tér megjelenő adatait.
 
-## Amit szerkeszthetsz
+## ✏️ Amit szerkeszthetsz
 
 - a saját megjelenő nevedet;
 - a közös tér nevét;
@@ -16,11 +16,11 @@ A **Beállítások** oldalon módosíthatod a saját és a közös tér megjelen
 
 Profilképhez vagy bannerhez előbb feltölthetsz egy fájlt, majd a kiválasztott médiát hozzákapcsolhatod a megfelelő elemhez. A korábban beállított profilkép leválasztható.
 
-### Bannerkép
+### 🖼️ Bannerkép
 
 Banner feltöltése előtt a szerkesztőben kivághatod, elforgathatod, nagyíthatod és pozicionálhatod a képet. A már beállított banner eltávolítását megerősítés kéri; ez csak a közös térhez való hozzárendelést szünteti meg, a fájl a fájlok között megmarad.
 
-## Jó adatkezelési szokások
+## 🛡️ Jó adatkezelési szokások
 
 - Közös eszközön kijelentkezés után zárd be a böngészőt is.
 - Csak olyan fényképet vagy videót tölts fel, amelyhez mindkét fél hozzájárult.

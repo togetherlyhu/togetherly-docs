@@ -4,11 +4,11 @@ outline: deep
 
 # 🏗️ Architektúra és adatmodell
 
-## Kérésfolyamat
+## 🔄 Kérésfolyamat
 
 `src/hooks.server.ts` minden kérésnél egyedi kérésazonosítót, IP- és user-agent-környezetet állít be a naplózáshoz. Ezután a `togetherly_session` süti hashének alapján betölti a résztvevőt, a közös teret és — admin esetben — a jogosultságokat. Karbantartási módban a nem admin kéréseket korlátozza, kivéve többek között az auth, health és karbantartási útvonalakat.
 
-## Adatmodell
+## 🗄️ Adatmodell
 
 | Entitás | Feladat |
 | --- | --- |
@@ -24,7 +24,7 @@ outline: deep
 | `changelog_entries`, `changelog_reads` | kiadási megjegyzések és olvasási állapot |
 | `admin_roles`, `participant_admin_roles` | admin szerepkörök és engedélyek |
 
-## Autentikáció
+## 🔐 Autentikáció
 
 Az ellenőrzőkód hatjegyű, SHA-256 hashként tárolódik és 10 percig él. Sikeres ellenőrzés után a szerver egy 32 véletlen byte-os token hashét tárolja; a nyers token csak a `httpOnly`, `sameSite=lax` sütiben van. A munkamenet 30 napos.
 
@@ -39,11 +39,11 @@ A kódkérés, ellenőrzés, újraküldés és közös tér létrehozása memór
 
 A munkamenetsüti `secure`, `httpOnly` és `sameSite=lax` beállítású.
 
-## Migrációk
+## 🔄 Migrációk
 
 A Drizzle definíciókat a `schema.ts` tartalmazza, az SQL migrációk a `drizzle/` könyvtárban vannak. A `hooks.server.ts` az indulás során meghívja az `ensureMigrations()` folyamatot. Séma módosításakor generálj és ellenőrizz migrációt, majd teszteld üres és már feltöltött adatbázissal is.
 
-## Új felhasználói funkció hozzáadása
+## ✨ Új felhasználói funkció hozzáadása
 
 1. Írd le a mezőket és hozzáférési szabályt a megfelelő sémában.
 2. Készíts migrációt.

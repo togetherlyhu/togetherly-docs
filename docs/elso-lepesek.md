@@ -6,7 +6,7 @@ outline: deep
 
 A Togetherly egy zárt közös tér két embernek. Itt tervezhetitek meg a randikat, vezethetitek a hozzájuk kapcsolódó emlékeket, és egy helyen tarthatjátok a közös képeket, videókat és fontos részleteket.
 
-## Mire használható?
+## 👋 Mire használható?
 
 - közös tér létrehozására és a partnered meghívására;
 - részletes randiötletek és konkrét randik megtervezésére;
@@ -15,7 +15,7 @@ A Togetherly egy zárt közös tér két embernek. Itt tervezhetitek meg a randi
 - a megvalósult randik értékelésére, emlékeinek és médiáinak elmentésére;
 - képek és videók közös galériában való kezelésére.
 
-## Gyors kezdés
+## 🚀 Gyors kezdés
 
 1. Nyisd meg a Togetherlyt, és az e-mail-címeddel kérj belépőkódot.
 2. Írd be az e-mailben kapott hatjegyű kódot.
@@ -27,11 +27,11 @@ A Togetherly egy zárt közös tér két embernek. Itt tervezhetitek meg a randi
 A közös tér létrehozásakor megadhattok ízléseket és költségkeretet, de ezek később is módosíthatók. A randi tervezésekor minden alkalomhoz külön megadhatjátok a részleteket.
 :::
 
-## Ki látja a közös tartalmakat?
+## ❤️ Ki látja a közös tartalmakat?
 
 A randi, az emlék és a feltöltött média ahhoz a közös térhez kapcsolódik, amelyben létrehoztátok. A két partner ugyanazokat a közös tartalmakat látja és szerkesztheti. A rendszergazdai felület a szolgáltatás üzemeltetésére szolgál, nem része a párok mindennapi használatának.
 
-## Következő lépések
+## ➡️ Következő lépések
 
 - [Belépés és közös tér létrehozása](/fiok-es-kozos-ter)
 - [Randi tervezése lépésről lépésre](/randi-tervezese)
