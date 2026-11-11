@@ -1,10 +1,15 @@
 
+import { existsSync } from 'node:fs'
+import { join } from 'node:path'
+
 import { defineConfig } from 'vitepress'
 
 import {
   GitChangelog,
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
+
+const hasGitRepository = existsSync(join(process.cwd(), '.git'))
 
 // ==========================================
 // TOGETHERLY DOCUMENTATION
@@ -60,20 +65,22 @@ export default defineConfig({
 
 
 
-  vite: { 
-    plugins: [ 
-      GitChangelog({ 
-        repoURL: () => 'https://github.com/togetherlyhu/togetherly-docs', 
-        mapAuthors: [
-          {
-            name: 'matyii',
-            username: 'matyii',
-            mapByNameAliases: ['matyii']
-          },
-        ],
-      }), 
-      GitChangelogMarkdownSection(), 
-    ],
+  vite: {
+    plugins: hasGitRepository
+      ? [
+          GitChangelog({
+            repoURL: () => 'https://github.com/togetherlyhu/togetherly-docs',
+            mapAuthors: [
+              {
+                name: 'matyii',
+                username: 'matyii',
+                mapByNameAliases: ['matyii'],
+              },
+            ],
+          }),
+          GitChangelogMarkdownSection(),
+        ]
+      : [],
   },
 
 
