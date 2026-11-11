@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Profil és beállítások
+# ⚙️ Profil és beállítások
 
 A **Beállítások** oldalon módosíthatod a saját és a közös tér megjelenő adatait.
 
@@ -15,6 +15,10 @@ A **Beállítások** oldalon módosíthatod a saját és a közös tér megjelen
 - a közös tér bannerképét.
 
 Profilképhez vagy bannerhez előbb feltölthetsz egy fájlt, majd a kiválasztott médiát hozzákapcsolhatod a megfelelő elemhez. A korábban beállított profilkép leválasztható.
+
+### Bannerkép
+
+Banner feltöltése előtt a szerkesztőben kivághatod, elforgathatod, nagyíthatod és pozicionálhatod a képet. A már beállított banner eltávolítását megerősítés kéri; ez csak a közös térhez való hozzárendelést szünteti meg, a fájl a fájlok között megmarad.
 
 ## Jó adatkezelési szokások
 

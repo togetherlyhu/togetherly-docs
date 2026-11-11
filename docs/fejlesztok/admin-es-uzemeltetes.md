@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Adminisztráció és hibaelhárítás
+# 🛡️ Adminisztráció és hibaelhárítás
 
 ## Admin jogosultságok
 
@@ -17,6 +17,17 @@ Az engedélyek között szerepelnek felhasználói, páros, tartalmi, analitikai
 - változásnapló bejegyzéseinek szerkesztése és publikálása;
 - naplók, rendszerállapot és analitika megtekintése;
 - alkalmazásbeállítások, például karbantartási mód és alap URL módosítása.
+
+## Rendszerállapot és karbantartás
+
+Az **Adminisztráció → Rendszerállapot** oldalon ellenőrizheted az adatbázis és az R2 kapcsolatát, valamint a tárolóban folyamatban lévő multipart feltöltéseket. A `/api/health` végpont külön is jelzi az adatbázis és a tárhely állapotát; az email, R2 és PostgreSQL kapcsolatpróbák az admin oldalon indíthatók. Az email-próba üzenetet küld a bejelentkezett admin címére.
+
+Az oldal további műveletei:
+
+- **Elakadt R2-feltöltések megszakítása:** megszakítja az öt percnél régebben indított multipart feltöltéseket, és frissíti a hozzájuk tartozó feltöltési munkamenetek állapotát.
+- **Adatbázis-fájlok egyeztetése az R2-vel:** ellenőrzi a befejezett feltöltések eredeti objektumait. A biztosan hiányzó objektumokhoz tartozó fájl- és fotórekordokat törli; átmeneti vagy jogosultsági hibánál nem töröl.
+
+Az egyeztetés törölhet adatbázisrekordokat, ezért csak az R2-hozzáférés és a tárhely állapotának ellenőrzése után indítsd el. A művelethez admin jogosultság és `system.view` engedély szükséges.
 
 ::: danger Törlési hatás
 Egy pár vagy résztvevő adminisztratív törlése kaszkádosan eltávolíthat kapcsolódó munkameneteket, ellenőrzőkódokat, preferenciákat, randikat, emlékeket és fotóadatokat. Éles adat törlése előtt ellenőrizd a célt és legyen helyreállítási terv.

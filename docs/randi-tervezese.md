@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Randi tervezése
+# 💕 Randi tervezése
 
 A Togetherly randitervezője 12 rövid lépésben gyűjti össze, milyen programot szeretnétek. Az új tervet a kezelőpultról vagy a naptár egy jövőbeli napjáról indíthatod.
 

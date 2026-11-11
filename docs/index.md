@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Togetherly
+  name: 💗 Togetherly
   text: Közös pillanatok, egy helyen
   tagline: Egyszerű útmutatók ahhoz, hogy több idő maradjon egymásra.
   image:

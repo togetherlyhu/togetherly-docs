@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Emlékek és galéria
+# 📸 Emlékek és galéria
 
 ## Emlék hozzáadása egy randihoz
 

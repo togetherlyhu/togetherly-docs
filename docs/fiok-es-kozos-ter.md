@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Bejelentkezés és közös tér
+# 🏡 Bejelentkezés és közös tér
 
 ## Belépés jelszó nélkül
 

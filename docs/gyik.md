@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Gyakori kérdések
+# ❓ Gyakori kérdések
 
 ## Nem érkezik meg a belépőkód
 

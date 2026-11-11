@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Első lépések
+# 🚀 Első lépések
 
 A Togetherly egy zárt közös tér két embernek. Itt tervezhetitek meg a randikat, vezethetitek a hozzájuk kapcsolódó emlékeket, és egy helyen tarthatjátok a közös képeket, videókat és fontos részleteket.
 

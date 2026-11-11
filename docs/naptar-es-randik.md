@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Naptár és randiállapotok
+# 📅 Naptár és randiállapotok
 
 A naptárban hónapnézetben látod a közös tér randijait. A jelölők színe az állapotot mutatja; egy napra kattintva megnyithatod az azon a napon szereplő programokat.
 

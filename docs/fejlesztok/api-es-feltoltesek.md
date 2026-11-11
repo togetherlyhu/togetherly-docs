@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# API, feltöltések és integrációk
+# 🔌 API, feltöltések és integrációk
 
 Az API-k elsődlegesen a Togetherly saját klienséhez készültek; nincsenek stabil, külső fejlesztőknek verziózott publikus API-ként deklarálva. Külső kliens előtt vezess be külön API-szerződést, autentikációs modellt, verziózást és jogosultságkezelést.
 
@@ -11,11 +11,14 @@ Az API-k elsődlegesen a Togetherly saját klienséhez készültek; nincsenek st
 | Végpont | Módszer | Cél |
 | --- | --- | --- |
 | `/api/health` | `GET` | PostgreSQL- és objektumtár-ellenőrzés; `200` vagy `503` |
+| `/api/version` | `GET` | Aktuális verzió és a legutóbbi publikált kiadás adatai |
 | `/api/calendar/[planId]` | `GET` | ICS naptárfájl előállítása egy randihoz |
 | `/api/events` | `GET` | kliensoldali szerver-sent events kapcsolat |
 | `/api/client-errors` | `POST` | klienshibák fogadása |
 
 A health válasz tartalmazza az állapotot, időbélyeget, verziót, valamint külön adatbázis- és storage-ellenőrzést. Ne tedd ezt a végpontot érzékeny belső hibaüzenetek nyilvános forrásává.
+
+A verzióvégpont `current` mezője az aktuális verziót és – ha rendelkezésre áll – a commit azonosítóját adja vissza. A `latest` a legutóbbi publikált changelog-bejegyzést tartalmazza, a `latestStatus` pedig jelzi, hogy van-e elérhető kiadás. Adatbázishiba esetén a végpont `503` választ ad, és a legutóbbi kiadást nem tudja lekérni.
 
 ## Feltöltési folyamat
 

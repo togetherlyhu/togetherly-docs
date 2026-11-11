@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Architektúra és adatmodell
+# 🏗️ Architektúra és adatmodell
 
 ## Kérésfolyamat
 
@@ -29,6 +29,15 @@ outline: deep
 Az ellenőrzőkód hatjegyű, SHA-256 hashként tárolódik és 10 percig él. Sikeres ellenőrzés után a szerver egy 32 véletlen byte-os token hashét tárolja; a nyers token csak a `httpOnly`, `sameSite=lax` sütiben van. A munkamenet 30 napos.
 
 A kódkérés, ellenőrzés, újraküldés és közös tér létrehozása memóriában tárolt sebességkorlátozást használ. Ez egyetlen alkalmazáspéldányra alkalmas; több példányos futtatáshoz megosztott rate-limit tároló szükséges.
+
+| Művelet | Korlát |
+| --- | --- |
+| Belépőkód kérése | 3 kérés / 15 perc |
+| Belépőkód ellenőrzése | 5 próbálkozás / 15 perc |
+| Kód újraküldése | 3 újraküldés / 15 perc |
+| Közös tér létrehozása | 1 próbálkozás / óra |
+
+A munkamenetsüti `secure`, `httpOnly` és `sameSite=lax` beállítású.
 
 ## Migrációk
 

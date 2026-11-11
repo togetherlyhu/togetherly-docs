@@ -127,6 +127,7 @@ export default defineConfig({
           { text: 'Architektúra és adatmodell', link: '/fejlesztok/architektura' },
           { text: 'API, feltöltések és integrációk', link: '/fejlesztok/api-es-feltoltesek' },
           { text: 'Adminisztráció és hibaelhárítás', link: '/fejlesztok/admin-es-uzemeltetes' },
+          { text: 'Közreműködés a dokumentációban', link: '/fejlesztok/kozremukodes' },
         ],
       },
       {
@@ -134,6 +135,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Áttekintés', link: '/changelog/' },
+          { text: 'v0.2.1', link: '/changelog/v0-2-1' },
           { text: 'v0.2.0', link: '/changelog/v0-2-0' },
           { text: 'v0.1.2', link: '/changelog/v0-1-2' },
           { text: 'v0.1.1', link: '/changelog/v0-1-1' },

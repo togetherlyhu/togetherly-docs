@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# Fejlesztői áttekintés
+# 💻 Fejlesztői áttekintés
 
-Ez a dokumentáció a `C:\code\togetherly` kódbázis 2026. novemberi állapotát írja le. A Togetherly egy SvelteKit-alapú, magyar nyelvű alkalmazás párok közös randitervezéséhez, emlékeihez és médiájához.
+Ez a dokumentáció a `togetherly` kódbázis 2026. novemberi állapotát írja le. A Togetherly egy SvelteKit-alapú, magyar nyelvű alkalmazás párok közös randitervezéséhez, emlékeihez és médiájához.
 
 ## Technológiai alapok
 
@@ -13,12 +13,13 @@ Ez a dokumentáció a `C:\code\togetherly` kódbázis 2026. novemberi állapotá
 | Webalkalmazás | SvelteKit 2, Svelte 5 runes, TypeScript |
 | Stílus | Tailwind CSS 4 és komponensszintű CSS |
 | Futási környezet | Bun / Node-kompatibilis SvelteKit build |
-| Adatbázis | PostgreSQL 16, Drizzle ORM |
+| Adatbázis | PostgreSQL 16, Drizzle ORM, `pg` driver |
 | E-mail | Nodemailer + SMTP |
 | Objektumtár | Cloudflare R2, AWS S3 SDK-kompatibilis kliens |
 | Médiafeldolgozás | Sharp, FFmpeg a konténerben |
 | Naptár | `ical-generator`, ICS és Google Naptár-hivatkozás |
-| Animáció | Motion for Svelte |
+| Ikonok és animáció | Lucide, Motion for Svelte |
+| Kódminőség | TypeScript, Svelte Check, ESLint, Prettier |
 
 ## Fő alkalmazási területek
 
