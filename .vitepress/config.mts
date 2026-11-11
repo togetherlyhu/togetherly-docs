@@ -1,27 +1,5 @@
 
-import { existsSync } from 'node:fs'
-import { join } from 'node:path'
-
 import { defineConfig } from 'vitepress'
-import type { Plugin } from 'vite'
-
-import {
-  GitChangelog,
-  GitChangelogMarkdownSection,
-} from '@nolebase/vitepress-plugin-git-changelog/vite'
-
-const hasGitRepository = existsSync(join(process.cwd(), '.git'))
-const noGitChangelogPlugin: Plugin = {
-  name: 'nolebase-git-changelog-fallback',
-  resolveId(id) {
-    if (id === 'virtual:nolebase-git-changelog')
-      return '\0virtual:nolebase-git-changelog'
-  },
-  load(id) {
-    if (id === '\0virtual:nolebase-git-changelog')
-      return 'export default { commits: [], authors: [] }'
-  },
-}
 
 // ==========================================
 // TOGETHERLY DOCUMENTATION
@@ -75,25 +53,6 @@ export default defineConfig({
     hostname: 'https://docs.togetherly.hu'
   },
 
-
-
-  vite: {
-    plugins: hasGitRepository
-      ? [
-          GitChangelog({
-            repoURL: () => 'https://github.com/togetherlyhu/togetherly-docs',
-            mapAuthors: [
-              {
-                name: 'matyii',
-                username: 'matyii',
-                mapByNameAliases: ['matyii'],
-              },
-            ],
-          }),
-          GitChangelogMarkdownSection(),
-        ]
-      : [noGitChangelogPlugin],
-  },
 
 
   // ==========================================
