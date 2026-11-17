@@ -153,6 +153,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Áttekintés', link: '/changelog/' },
+          { text: 'v0.2.3', link: '/changelog/v0-2-3' },
           { text: 'v0.2.2', link: '/changelog/v0-2-2' },
           { text: 'v0.2.1', link: '/changelog/v0-2-1' },
           { text: 'v0.2.0', link: '/changelog/v0-2-0' },
