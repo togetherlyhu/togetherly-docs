@@ -8,6 +8,7 @@ Itt találod a Togetherly kiadásainak részletes változásnaplóját. Minden k
 
 | Verzió | Dátum | Fő témák |
 | --- | --- | --- |
+| [v0.2.3](/changelog/v0-2-3) | 2026. november 17. | Regisztrációszüneteltetés és platformfejlesztések |
 | [v0.2.2](/changelog/v0-2-2) | 2026. november 11. | Togetherly Plus előfizetések és platformfejlesztések |
 | [v0.2.1](/changelog/v0-2-1) | 2026. november 11. | Felületfrissítés, adminisztráció és megbízhatóság |
 | [v0.2.0](/changelog/v0-2-0) | 2026. november 10. | Újratervezett felület, galéria és feltöltések, admin eszközök |
